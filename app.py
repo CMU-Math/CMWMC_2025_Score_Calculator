@@ -12,7 +12,7 @@ def get_values(spreadsheet_id, range_name): #reading data
   # creds = service_account.Credentials.from_service_account_file(
   #   "gcp-service-account.json", scopes=SCOPES)
 
-  creds = service_account.Credentials.from_service_account_file(
+  creds = service_account.Credentials.from_service_account_info(
     st.secrets["GCP-SERVICE-ACCOUNT"], scopes=SCOPES)
   
   try:
